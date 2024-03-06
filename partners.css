@@ -1,0 +1,201 @@
+/* Reset стилей */
+body,
+h1,
+h2,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+
+@font-face {
+    font-family: 'HeliosExtThin-Italic';
+    src: url('../up/fonts/HeliosExtThin-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* Основные стили */
+body {
+    font-family: "HeliosExtThin-Italic", sans-serif;
+}
+
+header {
+    background-color: #2E3B4E;
+    color: #FFF;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    width: 300px; /* Размер логотипа по вашему выбору */
+    margin-left: 30px;
+}
+
+.contact-info{
+    margin-bottom: 5px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.korz {
+    margin-left: 10px;
+    border-radius: 25px;
+    font-size: 15px;
+    background-color: #4f6a80;
+    color: #FFF;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.auth {
+    margin-left: 10px;
+    background-color: #4f6a80;
+    border-radius: 25px;
+    font-size: 15px;
+    color: #FFF;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-weight: 700;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav a {
+    text-decoration: none;
+    color: #FFF;
+    padding: 10px;
+    display: block;
+    width: 130px;
+    font-size: 22px;
+    font-weight: 700;
+    transition: color 0.5s ease-in-out;
+}
+
+nav a:hover {
+    color: #ff0000;
+}
+
+nav ul ul {
+    display: none;
+    position: absolute;
+    background-color: #4D5F72;
+    border-radius: 0 0 4px 4px;
+    z-index: 1;
+}
+
+nav ul li:hover > ul {
+    display: inherit;
+}
+
+nav ul ul li {
+    width: 260px;
+    float: none;
+    display: list-item;
+    position: relative;
+}
+
+.company-description {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: #193a6660;
+    color: #ffffff;
+    border-radius: 30px;
+    width: 700px;
+    height: 100px;
+}
+
+.product-cards {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 10px;
+    background-color: #F4F4F4;
+}
+
+.product-card {
+    width: 30%; /* Ширина карточки товара по вашему выбору */
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #D9D9D9;
+    border-radius: 40px;
+    background-color: #FFF;
+    text-align: center;
+}
+
+.product-card img {
+    width: 400px;
+    height: 250px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #2E3B4E;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    bottom: 0;
+    width: 100%;
+    
+}
+
+.contact-info-footer {
+    text-align: left;
+    float: left;
+    width: 30%; /* Задайте ширину, которая вам подходит */
+    margin-left: 250px;
+}
+
+.navigation {
+    text-align: right;
+    float: right;
+    width: 40%; /* Задайте ширину, которая вам подходит */
+    
+}
+
+.footer-links {
+    text-align: center;
+    clear: both;
+    padding: 30px;
+}
+
+/* Дополнительные стили для разделения навигации на два столбика */
+.navigation-column {
+    width: 50%;
+    float: left;
+   
+}
+
+.navigation a {
+    display: block;
+    margin-bottom: 5px;
+    margin-right: 300px;
+}
+
+.footer-logo img {   
+    width: 200px; /* Размер логотипа по вашему выбору */
+    margin-right: 55px;
+}
+
+a {
+    text-decoration: none; /* Убираем подчеркивание */
+    color: inherit; /* Используем цвет, унаследованный от родительского элемента */
+    width: 100px;
+}
+
+a:hover {
+    text-decoration: none; /* Убираем подчеркивание при наведении */
+}
